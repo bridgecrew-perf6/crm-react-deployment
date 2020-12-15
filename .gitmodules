@@ -1,0 +1,8 @@
+[submodule "crm-react-backend"]
+	path = crm-react-backend
+	url = git@github.com:vaadin/crm-react-backend.git
+	branch = master
+[submodule "crm-react"]
+	path = crm-react
+	url = git@github.com:vaadin/crm-react.git
+	branch = master

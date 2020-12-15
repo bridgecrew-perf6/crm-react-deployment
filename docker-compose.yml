@@ -1,0 +1,15 @@
+version: '3'
+services:
+  api:
+    build: ./crm-react-backend
+    environment:
+      - SERVER_SERVLET_CONTEXT_PATH=/api
+  ui:
+    build: ./crm-react
+  proxy:
+    build: ./crm-react-proxy
+    ports:
+      - '8080:80'
+    depends_on:
+      - api
+      - ui
